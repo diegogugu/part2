@@ -88,8 +88,8 @@ const App = () => {
   return (
     <div>
       <h2>Phonebook</h2>
-      <>{successMessage ? <div className='success'>{successMessage}</div>: <></>}</>
-      <>{errorMessage ? <div className='error'>{errorMessage}</div>: <></>}</>
+      <>{successMessage ? <div className='success'>{successMessage}</div> : <></>}</>
+      <>{errorMessage ? <div className='error'>{errorMessage}</div> : <></>}</>
       <Filter handleFilterValues={handleFilterValues} filteredValue={filteredValue} />
       <h2>add a new</h2>
       <PersonForm addName={addName} handleNameChange={handleNameChange} handleNumberChange={handleNumberChange} newName={newName} newNumber={newNumber} />
