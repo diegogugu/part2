@@ -7,7 +7,11 @@ const CountryInfo = ({ filteredData, showCountry, weather }) => {
     : <div>
         {filteredData?.length > 10
             ? 'too many matches, specify another filter' :
-            filteredData?.map(paese => (<p key={paese.name.official}>{paese.name.common}<button onClick={() => showCountry(paese)}>Show</button></p>))}
+            filteredData?.map(paese => (
+                <p key={paese.name.official}>{paese.name.common}
+                    <button onClick={() => showCountry(paese)}>Show</button>
+                </p>
+            ))}
     </div>
     )
 }
